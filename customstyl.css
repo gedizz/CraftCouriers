@@ -11,6 +11,10 @@ White: #FFFFFF
     margin: 5px;
 }
 
+h3 {
+    text-transform: uppercase;
+}
+
 body {
     font-family: 'Sora', sans-serif;
   }
@@ -108,7 +112,7 @@ nav .bar {
 
 /* Section 1 */
 .section1 {
-    border: 1px solid red;
+
     height: auto;
 }
 
@@ -121,7 +125,7 @@ button {
     color: #ffffff;
     text-transform: uppercase;
     background-color: #DE9F38;
-    border-color: #DE9F38;
+    border-color: #1E3251;
     border-radius: 10px;
     height: 45px;
     font-size: 18px;
@@ -131,7 +135,7 @@ button {
 
 button:hover {
     background-color: #1E3251;
-    border-color: #1E3251;
+    border-color: #DE9F38;
     border-radius: 10px;
     font-size: 20px;
 }
@@ -190,6 +194,7 @@ button:hover {
 
 .instructiontext p {
     flex-basis: 80%;
+    line-height: 1.8;
     font-size: 14px;
 }
 
@@ -219,20 +224,224 @@ button:hover {
 
 /* Section 2 */
 .section2 {
-    border: 1px solid blue;
+    background-color: #f8f8f8;
+    height: auto;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section2 h3 {
+    padding-bottom: 30px;
+    padding-top: 60px;
+}
+
+.beerproduct {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.beerproduct img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.beerproductimage {
+    display: flex;
+    flex-basis: 10%;
+}
+
+.beerproduct-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 20%;
+    text-align: left;
+
 }
 
 
 /* Section 3 */
 .section3 {
-    border: 1px solid yellow
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    text-align: center;
+    
+}
+
+.section3 h3{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    
+}
+
+.gobeyondbottle {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "access quality independence ease"
+        "community community community community";
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+#access {
+    grid-area: access;
+}
+
+#quality {
+    grid-area: quality;
+}
+
+#independence {
+    grid-area: independence;
+}
+
+#ease {
+    grid-area: ease;
+}
+
+#community {
+    display: flex;
+    justify-content: center;
+    grid-area: community;
+    width: 100%;
+    
+}
+
+#communitynest {
+    width: 25%;
+}
+
+.tastiestway {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.27)), 
+    url("https://uploads-ssl.webflow.com/5e18f76c778ad80e975f2197/5eb0868b17eff63667edefb4_phone3-compressor.png"), 
+    linear-gradient(180deg, rgba(30, 50, 81, 0.64), rgba(30, 50, 81, 0.82));
+    background-position: 0px 0px, 50% 50%, 0px 0px;
+    background-size: auto, cover, auto;
+    background-repeat: repeat, no-repeat, repeat;
+    background-attachment: scroll, fixed, scroll;
+    justify-content: center;
+    align-items: center;
+}
+
+.tastiestway h1 {
+    width: 35%;
+    text-transform: uppercase;
+    color: white;
 }
 
 
 /* Section 4 */
 .section4 {
-    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+
 }
+
+.referrals {
+    display: grid;
+    grid-template: repeat(1, auto) / 1fr 1fr 1fr;
+    grid-template-areas: 
+        "adiodc sg003 brobb335";
+    width: 50%;
+    line-height: 1.8;
+}
+
+.refbox {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 15px;
+
+}
+
+#adiodc {
+    grid-area: adiodc;
+}
+
+#sg003 {
+    grid-area: sg003;
+}
+
+#brobb335 {
+    grid-area: brobb335
+}
+
+
+
+
+
+
+/* Section 5 */
+.section5 {
+    display: flex;
+    height: 295px;
+    margin-left: -10px;
+    margin-right: -11px;
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #ff935c, #fd7063 100%, #fb406c);
+    align-items: center;
+    justify-content: center;
+}
+
+.pinkboxcontainer {
+    display: grid;
+    grid-template: repeat(1, auto) / 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "independentcommunity breweries states beers";
+        
+}
+
+.pinkbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.pinkbox img {
+    height: 64px;
+    width: 64px;
+}
+
+#independentcommunity {
+    grid-area: independentcommunity;
+}
+
+#breweries {
+    grid-area: breweries;
+}
+
+#states {
+    grid-area: states;
+}
+
+#beers {
+    grid-area: beers;
+}
+
+
+
+
 
 /* Footer */
 footer {
