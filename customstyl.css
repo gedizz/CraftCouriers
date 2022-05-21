@@ -5,6 +5,9 @@ LYellow: #ffce32
 Blue: #1E3251
 White: #FFFFFF
 
+https://coolors.co/dff2d8-c6dea6-7ebdc3-7a6263-ced097
+https://fonts.google.com/specimen/Montserrat?query=Mont&preview.text_type=custom
+
 */
 
 * {
@@ -16,7 +19,7 @@ h3 {
 }
 
 body {
-    font-family: 'Sora', sans-serif;
+    font-family: 'Montserrat';
   }
 
 /* Head Nav */
@@ -134,7 +137,7 @@ button {
 }
 
 button:hover {
-    background-color: #1E3251;
+    background-color: #4A75BA;
     border-color: #DE9F38;
     border-radius: 10px;
     font-size: 20px;
