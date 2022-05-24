@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<!-- 
-    delivery range checker:
-     - check zone
-     - pop up that allows you to go to order now if zip code is correct
-     - otherwise prompts social media to see when zone added or add button that 
-     sends zip code -- confirmation to innerHTML -- then can follow and exit pop-up
 
--->
 
 <head>
      <!-- Metas -->
@@ -37,6 +30,8 @@
     <meta name="expires"
         content="Fri, 04 Apr 2014 23:59:59 GMT">
     -->
+
+    <!-- Javascript -->
 
     
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -155,18 +150,34 @@
 
         </div>
 
-        <!-- Need to add JS for pop-up -->
+        <!-- 
+        delivery range checker:
+        - check zone
+        - pop up that allows you to go to order now if zip code is correct
+        - otherwise prompts social media to see when zone added or add button that 
+        sends zip code -- confirmation to innerHTML -- then can follow and exit pop-up
+        -->
         <div class="zipcodefinder">
             <h3>Are you in the zone?</h3>
             <p>Enter your zip code below to find out!
             </p>
-            <form action="#determinezip" method="get">
+            <form method="get">
                 <label>Zip Code: 
                     <input type="text" name="zipcode" maxlength="5">
                 </label>
-                <button type="submit">run the check</button>
+                <button id="zipbutton">run the check</button>
+                
+                
             </form>
-            
+
+            <div class="popup" id="pop-up">
+                <h1>Zip code popup</h1>
+                <button class="exitbutton" id="zip-exit">x</button>
+                <button>Order now</button>
+            </div>
+
+            <!-- JS for zipcode -->
+            <script src="js/zipcode.js"></script>
             
 
         </div>

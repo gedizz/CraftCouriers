@@ -17,8 +17,6 @@ GFX:
   -pop up also needs to obviously say whether or not they're in the zone
   -- future feature: If in x prox of brewery, maybe let them order still
 
-  For love of craft --
-   - apply linear gradient to BG
 
    Instagram posts
     - Should display recent instagram posts from instagram.com/craftcouriers
