@@ -19,6 +19,7 @@
         content="no-cache">
      -->
     <meta name="author" content="Lucas Geditz">
+    <meta name="viewport" content="initial-scale=1">
     <!-- 
         nofollow - only indexes the page with this meta
         noindex - search engines dont index at all
@@ -32,7 +33,7 @@
     -->
 
     <!-- Javascript -->
-
+    
 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="customstyl.css" type="text/css">
@@ -161,15 +162,15 @@
             <h3>Are you in the zone?</h3>
             <p>Enter your zip code below to find out!
             </p>
-            <form action="#determinezip" method="get">
+            <form>
                 <label>Zip Code:
-                    <input type="text" name="zipcode" maxlength="5">
+                    <input type="text" id="zipcode" maxlength="5">
                 </label>
-                <button id="zipbutton">run the check</button>
+                <button type="button" id="zipbutton">run the check</button>
             </form>
 
             <div class="popup" id="zip-inside-range">
-                <button class="exitbutton" id="zip-exit">x</button>
+                <button class="exitbutton" id="zip-exit1">x</button>
 
                 <div>
                     <h1>Cheers! You are in our delivery zone!</h1>
@@ -180,13 +181,30 @@
                     <button>Order now</button>
                 </div>
                 
-                
             </div>
 
             <div class="popup" id="zip-outside-range">
-                <h1>Sorry, you are not in our zone...yet! </h1>
-                <button class="exitbutton" id="zip-exit">x</button>
-                <button>Order now</button>
+                <button class="exitbutton" id="zip-exit2">x</button>
+
+                <div>
+                    <h1>Sorry, you are not in our zone...yet! </h1>
+                </div>
+                
+
+                <div>
+                    <h3>Want your zip code to be added to our delivery range?</h3>
+                    <button>request zip code</button>
+                </div>
+                <div>
+                    <p>Follow us on social for updates</p>
+                    <div class="logo-row">
+                        <img id="fbook" src="images/facebook-logo.png">
+                        <img id="twit" src="images/twitter-logo.png">
+                        <img id="linkedin" src="images/linkedin-logo.png">
+                        <img id="insta" src="images/instagram-logo.png">
+                    </div>
+                </div>
+                
             </div>
 
             <!-- JS for zipcode -->

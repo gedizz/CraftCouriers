@@ -2,7 +2,11 @@
 var zipCodeButton = document.getElementById("zipbutton");
 var insideRangeDiv = document.getElementById("zip-inside-range");
 var outsideRangeDiv = document.getElementById("zip-outside-range")
-var zipExitButton = document.getElementById("zip-exit");
+var zipExitButton1 = document.getElementById("zip-exit1");
+var zipExitButton2 = document.getElementById("zip-exit2");
+var zipCodeForm = document.getElementById("zipcode");
+
+
 
 const zipCodes = ['55126', '55305', '55488', '55487', '55455', '55112', '55311', '55343', 
 '55345', '55369', '55401', '55402', '55403', '55404', '55405', '55406', '55407', '55408', 
@@ -13,7 +17,8 @@ const zipCodes = ['55126', '55305', '55488', '55487', '55455', '55112', '55311',
 
 // Event listener checking if the zipcode button was clicked
 zipCodeButton.addEventListener('click', buttonClicked);
-zipExitButton.addEventListener('click', hideElement);
+zipExitButton1.addEventListener('click', hideElement);
+zipExitButton2.addEventListener('click', hideElement);
 
 // Used to hide element when they click the x
 function hideElement() {
@@ -25,7 +30,8 @@ function hideElement() {
 function buttonClicked() {
 
     // If zip is in the zipCodes array then display the appropriate popup
-    withinRange = zipCodes.includes('55401')
+    withinRange = zipCodes.includes(zipCodeForm.value)
+    console.log(zipCodeForm.value)
 
     if (withinRange) {
         insideRangeDiv.style.display = "flex"
