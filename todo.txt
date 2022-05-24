@@ -34,3 +34,4 @@ GFX:
      - just need content update from brother.
 
     Footer - Copy format from craft-couriers.com
+     - crop top and bottom of logo so it fits better in footer
