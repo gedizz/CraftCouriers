@@ -1,3 +1,7 @@
+Wireframe:
+https://lucid.app/lucidchart/4acb70e7-220f-4f19-b785-c7a40d8c38e2/edit?viewport_loc=-324%2C3213%2C2994%2C1437%2C0_0&invitationId=inv_7c30830a-50fa-43b5-b1ae-aeb331f2e26e#
+
+
 GFX:
  - Change minnesota logo to not have county outlines
  - use craft couriers bronze or marigold for pin
