@@ -472,14 +472,78 @@ button:hover {
 
 
 /* Footer */
-footer {
-    text-align: center;
-    background-color: #1E3251;
+footer {    
+    background-color: #1E3251;  
     color: #DE9F38;
-    height: auto;
+
+    display: grid;
+    grid-template: repeat(5, auto) / 1fr;
+    grid-template-areas: 
+        "info"
+        "email"
+        "follow"
+        "socials"
+        "copy";
 }
 
-footer img {
+footer .infobar {
+    grid-area: info;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footlogo {
+    display: flex;
+    flex-basis: 35%;
+}
+
+footer .infotext {
+    display: flex;
+    /* have to set height so h3s are spaced */
+    height: 80%;
+    flex-basis: 65%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .footlogo img {
+    max-width: 100%;
+}
+
+footer .infotext {
+    grid-area: text;
+}
+
+footer p {
+    display: flex;
+    flex-basis: 100%;
+    justify-self: center;
+}
+
+footer #email {
+    grid-area: email;
+}
+
+footer #follow {
+    grid-area: follow;  
+}
+
+footer p a {
+    color: #DE9F38;
+    margin: 0; 
+}
+
+footer .logo-row {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    justify-self: center;
+}
+
+footer .logo-row img {
     height: 32px;
     width: 32px;
     opacity: 0.3;
