@@ -33,7 +33,7 @@
 
     <!-- Javascript -->
 
-    
+
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="customstyl.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -168,15 +168,30 @@
                 <button id="zipbutton">run the check</button>
             </form>
 
-            <div class="popup" id="pop-up">
-                <h1>Zip code popup</h1>
+            <div class="popup" id="zip-inside-range">
+                <button class="exitbutton" id="zip-exit">x</button>
+
+                <div>
+                    <h1>Cheers! You are in our delivery zone!</h1>
+                </div>
+                
+
+                <div>
+                    <button>Order now</button>
+                </div>
+                
+                
+            </div>
+
+            <div class="popup" id="zip-outside-range">
+                <h1>Sorry, you are not in our zone...yet! </h1>
                 <button class="exitbutton" id="zip-exit">x</button>
                 <button>Order now</button>
             </div>
 
             <!-- JS for zipcode -->
             <script src="js/zipcode.js"></script>
-            
+
 
         </div>
 
@@ -410,7 +425,8 @@
                         style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
                         <a href="https://www.instagram.com/p/Cd6HzfnNO29/?utm_source=ig_embed&amp;utm_campaign=loading"
                             style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
-                            target="_blank">A post shared by Craft Couriers (@craftcouriers)</a></p>
+                            target="_blank">A post shared by Craft Couriers (@craftcouriers)</a>
+                    </p>
                 </div>
             </blockquote>
             <script async src="//www.instagram.com/embed.js"></script>
@@ -438,9 +454,9 @@
             <img src="/images/footer-logo.png">
         </div>
         <div class="infotext">
-                <h3>Delivery Hours: Monday-Sunday 5:00pm-7:00pm</h3>
-                <h3>Must be home and able to show a 21+ ID</h3>
-                <h3>All orders placed after 4:00pm will be delivered next day</h3>
+            <h3>Delivery Hours: Monday-Sunday 5:00pm-7:00pm</h3>
+            <h3>Must be home and able to show a 21+ ID</h3>
+            <h3>All orders placed after 4:00pm will be delivered next day</h3>
         </div>
     </div>
     <div class="contact_info">

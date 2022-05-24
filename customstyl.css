@@ -237,6 +237,10 @@ button:hover {
 
 .popup {
     display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
     border: solid 4px #DE9F38;
     box-shadow: 0px 0px 32px 25px black;
     position: fixed;
@@ -248,6 +252,7 @@ button:hover {
     margin-top: -200px;
     width: 600px;
     margin-left: -300px;
+    
 }
 
 .exitbutton {
