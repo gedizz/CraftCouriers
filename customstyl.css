@@ -579,27 +579,29 @@ footer .infobar {
 
 footer .footlogo {
     display: flex;
-    flex-basis: 35%;
+    flex-basis: 50%;
+    justify-content: flex-start;
 }
 
 footer .infotext {
     display: flex;
     /* have to set height so h3s are spaced */
     height: 80%;
-    flex-basis: 65%;
+    flex-basis: 50%;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-around;
 }
 
 footer .footlogo img {
-    max-width: 100%;
+    max-width: 400px;
 }
 
 footer p {
     display: flex;
     flex-basis: 100%;
     justify-self: center;
+    padding-left: 3.5rem;
 }
 
 footer .contact_info {
@@ -612,8 +614,8 @@ footer .contact_info {
 
 footer .contact_info #email {
     display: flex;
-    flex-basis: 35%;
-    justify-content: center;
+    flex-basis: 50%;
+    justify-content: flex-start;
 }
 
 footer p a {
@@ -623,8 +625,8 @@ footer p a {
 
 footer .logo-row {
     display: flex;
-    flex-basis: 65%;
-    justify-content: center;
+    flex-basis: 50%;
+    justify-content: flex-end;
     justify-self: center;
 }
 
