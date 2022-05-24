@@ -1,8 +1,9 @@
 /* 
 Color scheme:
-DYellow: #DE9F38
-LYellow: #ffce32
-Blue: #1E3251
+Marigold: #DE9F38
+Bronze: #BD812B
+PrussianBlue: #1E3251
+BlueYonder: #4A75BA
 White: #FFFFFF
 
 https://coolors.co/dff2d8-c6dea6-7ebdc3-7a6263-ced097
@@ -12,6 +13,7 @@ https://fonts.google.com/specimen/Montserrat?query=Mont&preview.text_type=custom
 
 * {
     margin: 5px;
+    
 }
 
 h3 {
@@ -19,7 +21,9 @@ h3 {
 }
 
 body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    color: #1E3251;
+
   }
 
 /* Head Nav */
@@ -73,6 +77,7 @@ nav .bar {
     text-decoration: none;
     padding: 14px;
     font-size: 18px;  
+    text-shadow: -2px 2px black;
     
 }
 
@@ -106,6 +111,7 @@ nav .bar {
 
 .headtext h1 {
     color: white;
+    text-shadow: -2px 2px black;
     font-size: 40px;
     text-align: center;
     width: 80%;
@@ -151,7 +157,7 @@ button:hover {
     display: grid;
     grid-template: repeat(1, auto) / 1fr 1fr 1fr;
     grid-template-areas: 
-        "download discover deliver";
+        "deliveryzone addbrews relax-and-deliver";
     width: 70%;
     margin: auto;
     height: auto;
@@ -159,16 +165,16 @@ button:hover {
     padding-bottom: 100px;
 }
 
-#download {
-    grid-area: download
+#deliveryzone {
+    grid-area: deliveryzone
 }
 
-#discover {
-    grid-area: discover
+#addbrews {
+    grid-area: addbrews
 }
 
-#deliver {
-    grid-area: deliver
+#relax-and-deliver {
+    grid-area: relax-and-deliver
 }
 
 .instructionbox {
@@ -201,7 +207,7 @@ button:hover {
     font-size: 14px;
 }
 
-.shopcraftbeer {
+.zipcodefinder {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,62 +217,62 @@ button:hover {
     width: 50%;
     border: 3px solid #DE9F38;
     border-radius: 10px;
+    
 }
 
-.shopcraftbeer h3 {
+.zipcodefinder h3 {
     text-transform: uppercase;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
-.shopcraftbeer img {
-    padding-bottom: 45px;
-    margin-top: -30px;
+.zipcodefinder form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.zipcodefinder p{
+    padding-bottom: 20px;
 }
 
 
 
 /* Section 2 */
 .section2 {
-    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(217, 45%, 51%, 1.0);
     height: auto;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: 40px;
-    text-align: center;
-    text-transform: uppercase;
+    text-align: left;
 }
 
-.section2 h3 {
-    padding-bottom: 30px;
-    padding-top: 60px;
-}
-
-.beerproduct {
+.love-of-craft {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
+    width: 50%;
+    height: auto;
+    color: #ffffff
+    
 }
 
-.beerproduct img {
-    height: 200px;
-    width: 200px;
-    border-radius: 10px;
+.love-of-craft img {
+    height: 341px;
+    width: 214px;
 }
 
-.beerproductimage {
-    display: flex;
-    flex-basis: 10%;
+.love-of-craft h3 {
+    color: #DE9F38;
 }
 
-.beerproduct-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 20%;
-    text-align: left;
-
+.love-of-craft #owner-text {
+    width: 40%;
 }
-
 
 /* Section 3 */
 .section3 {
@@ -284,45 +290,27 @@ button:hover {
     
 }
 
-.gobeyondbottle {
-    display: grid;
-    grid-template: repeat(2, 1fr) / 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-        "access quality independence ease"
-        "community community community community";
-    width: 80%;
-    margin: auto;
-    text-align: left;
-}
-
-#access {
-    grid-area: access;
-}
-
-#quality {
-    grid-area: quality;
-}
-
-#independence {
-    grid-area: independence;
-}
-
-#ease {
-    grid-area: ease;
-}
-
-#community {
+.instagram-posts-container {
     display: flex;
-    justify-content: center;
-    grid-area: community;
+    flex-direction: column;
+}
+
+.instagram-posts-container .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.instagram-posts-container .post {
     width: 100%;
+    height: 500px;
     
+
 }
 
-#communitynest {
-    width: 25%;
-}
 
+  /* Slideshow end */ 
+
+/* KEEP BECAUSE I DID GOOD
 .tastiestway {
     display: flex;
     flex-direction: column;
@@ -345,6 +333,7 @@ button:hover {
     color: white;
 }
 
+*/
 
 /* Section 4 */
 .section4 {
@@ -421,6 +410,11 @@ button:hover {
     color: white;
 }
 
+.istagram-media {
+    height: 300px;
+    width: 200px !important;
+}
+
 .pinkbox img {
     height: 64px;
     width: 64px;
@@ -452,4 +446,14 @@ footer {
     background-color: #1E3251;
     color: #DE9F38;
     height: auto;
+}
+
+footer img {
+    height: 32px;
+    width: 32px;
+    opacity: 0.3;
+}
+
+footer img:hover {
+    opacity: 1;
 }

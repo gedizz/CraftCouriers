@@ -1,0 +1,32 @@
+GFX:
+ - Change minnesota logo to not have county outlines
+ - use craft couriers bronze or marigold for pin
+ - maybe orange for c in car logo
+
+ NAV -- 
+ - should be a drop down that pops up an exitable menu on mobile
+
+ ARe you in the zone --
+  - Should compare entered zip with an array of zip codes.
+  - Should make an on screen pop up that lets the user request their zip code to be added
+  - if they are in the zone it should also prompt them to order now
+  -pop up also needs to obviously say whether or not they're in the zone
+  -- future feature: If in x prox of brewery, maybe let them order still
+
+  For love of craft --
+   - apply linear gradient to BG
+
+   Instagram posts
+    - Should display recent instagram posts from instagram.com/craftcouriers
+    - Clicking on the post should bring you to page.
+    - also add a follow us button
+
+    Brewery Gallery --
+     - Should be similar to gallery at https://www.craft-couriers.com/brewery-partners/
+     - Clicking image should take you to the breweries corresponding page
+
+
+    Reviews --
+     - just need content update from brother.
+
+    Footer - Copy format from craft-couriers.com
