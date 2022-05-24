@@ -1,8 +1,10 @@
 
 var zipCodeButton = document.getElementById("zipbutton");
-var popupDiv = document.getElementById("pop-up");
+var insideRangeDiv = document.getElementById("zip-inside-range");
+var outsideRangeDiv = document.getElementById("zip-outside-range")
 var zipExitButton = document.getElementById("zip-exit");
-var zipcodes = ['55126', '55305', '55488', '55487', '55455', '55112', '55311', '55343', 
+
+const zipCodes = ['55126', '55305', '55488', '55487', '55455', '55112', '55311', '55343', 
 '55345', '55369', '55401', '55402', '55403', '55404', '55405', '55406', '55407', '55408', 
 '55409', '55410', '55411', '55412', '55413', '55414', '55415', '55416', '55417', '55418', 
 '55419', '55421', '55422', '55424', '55426', '55427', '55428', '55429', '55430', '55436', 
@@ -15,12 +17,26 @@ zipExitButton.addEventListener('click', hideElement);
 
 // Used to hide element when they click the x
 function hideElement() {
-    var popupDiv = document.getElementById("pop-up");
-    popupDiv.style.display = "none";
+    insideRangeDiv.style.display = "none";
+    outsideRangeDiv.style.display = "none";
 }
 
 // When they click the zip code button it will change the style display
 function buttonClicked() {
-    var popupDiv = document.getElementById("pop-up");
-    popupDiv.style.display = "flex";
+
+    // If zip is in the zipCodes array then display the appropriate popup
+    withinRange = zipCodes.includes('55401')
+
+    if (withinRange) {
+        insideRangeDiv.style.display = "flex"
+        
+    } else {
+        outsideRangeDiv.style.display = "flex";
+    }
+
+    // Display last so changes to div are made prior
+   // popupDiv.style.display = "flex";
 }
+
+
+
