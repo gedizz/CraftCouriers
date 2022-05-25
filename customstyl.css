@@ -12,7 +12,7 @@ https://fonts.google.com/specimen/Montserrat?query=Mont&preview.text_type=custom
 */
 
 * {
-    margin: 5px;
+    margin: 0px;
     
 }
 
@@ -188,7 +188,7 @@ button:hover {
 
 @media only screen and (max-width: 800px) {
     .howdoesitwork {
-        display: flex;
+        display: grid;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -382,8 +382,6 @@ button:hover {
     rgba(0, 0, 0, 0.44)),  
     linear-gradient(180deg, rgba(74, 117, 186, 0.65), rgba(74, 117, 186, 0.92));
     height: auto;
-    margin-left: -10px;
-    margin-right: -10px;
     margin-top: 40px;
     text-align: left;
     line-height: 1.9;
@@ -546,8 +544,6 @@ button:hover {
 .section5 {
     display: flex;
     height: 295px;
-    margin-left: -10px;
-    margin-right: -11px;
     margin-top: 40px;
     text-align: center;
     text-transform: uppercase;
