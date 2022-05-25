@@ -563,78 +563,26 @@ footer {
     color: #DE9F38;
 
     display: grid;
-    grid-template: repeat(4, auto) / 1fr;
+    grid-template: repeat(4, auto) / repeat(2, auto);
     grid-template-areas: 
-        "info"
-        "contact";
+        "logo info"
+        "mail socials";
 }
 
-footer .infobar {
-    grid-area: info;
+footer #footlogo {
+    grid-area: logo;
     display: flex;
-    flex-basis: 100%;
-    justify-content: space-between;
-    align-items: center;
 }
 
-footer .footlogo {
-    display: flex;
-    flex-basis: 50%;
-    justify-content: flex-start;
-}
-
-footer .infotext {
-    display: flex;
-    /* have to set height so h3s are spaced */
-    height: 80%;
-    flex-basis: 50%;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
-}
-
-footer .footlogo img {
+footer #footlogo img {
     max-width: 400px;
-}
-
-footer p {
-    display: flex;
-    flex-basis: 100%;
-    justify-self: center;
-    padding-left: 3.5rem;
-}
-
-footer .contact_info {
-    grid-area: contact;
-    display: flex;
-    flex-basis: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-footer .contact_info #email {
-    display: flex;
-    flex-basis: 50%;
-    justify-content: flex-start;
-}
-
-footer p a {
-    color: #DE9F38;
-    margin: 0; 
-}
-
-footer .logo-row {
-    display: flex;
-    flex-basis: 50%;
-    justify-content: flex-end;
-    justify-self: center;
+    width: 100%;
 }
 
 footer .logo-row img {
     height: 32px;
     width: 32px;
     opacity: 0.3;
-    padding: 0 2rem;
 }
 
 footer img:hover {
