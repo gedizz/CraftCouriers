@@ -612,11 +612,46 @@ footer {
     grid-template-areas: 
         "logo info"
         "mail socials";
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7rem .5rem 7rem;
 }
 
 footer #footlogo {
     grid-area: logo;
     display: flex;
+    justify-self: flex-start;
+}
+
+footer #infotext {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-around;
+}
+
+footer #email {
+    grid-area: mail;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #email a {
+    color: #DE9F38; 
+}
+
+footer #infotext h3 {
+    text-align: center;
+}
+
+footer #logo-row {
+    grid-area: socials;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
 }
 
 footer #footlogo img {
@@ -624,12 +659,12 @@ footer #footlogo img {
     width: 100%;
 }
 
-footer .logo-row img {
+footer #logo-row img {
     height: 32px;
     width: 32px;
     opacity: 0.3;
 }
 
-footer img:hover {
+footer #logo-row img:hover {
     opacity: 1;
 }
