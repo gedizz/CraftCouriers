@@ -616,18 +616,20 @@ button:hover {
 
 /* Footer */
 footer {    
-    background-color: #1E3251;  
+    background-color: #1E3251;
     color: #DE9F38;
 
     display: grid;
-    grid-template: repeat(4, auto) / repeat(2, auto);
+    grid-template: repeat(2, auto) / repeat(2, auto);
     grid-template-areas: 
         "logo info"
         "mail socials";
+    
+    row-gap: 1rem;
 
     align-items: center;
     justify-content: space-between;
-    padding: .5rem 7rem .5rem 7rem;
+    padding: .75rem 7rem;
 }
 
 footer #footlogo {
@@ -649,6 +651,7 @@ footer #email {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
 }
 
 footer #email a {
@@ -657,6 +660,7 @@ footer #email a {
 
 footer #infotext h3 {
     text-align: center;
+    font-size: 1.25rem;
 }
 
 footer #logo-row {
