@@ -7,14 +7,8 @@ GFX:
  - use craft couriers bronze or marigold for pin
  - maybe orange for c in car logo
 
- NAV -- 
- - should be a drop down that pops up an exitable menu on mobile
-
  ARe you in the zone --
-  - Should compare entered zip with an array of zip codes.
-  - Should make an on screen pop up that lets the user request their zip code to be added
-  - if they are in the zone it should also prompt them to order now
-  -pop up also needs to obviously say whether or not they're in the zone
+  - #zip-inside-range needs more content
   -- future feature: If in x prox of brewery, maybe let them order still
 
 
@@ -30,3 +24,6 @@ GFX:
 
     Reviews --
      - just need content update from brother.
+
+     Footer --
+     - Needs to be responsive

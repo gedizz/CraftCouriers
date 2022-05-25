@@ -20,9 +20,14 @@ h3 {
     text-transform: uppercase;
 }
 
+html {
+    width: 100%;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: #1E3251;
+    width: 100%;
 
   }
 
@@ -59,6 +64,7 @@ nav .bar {
 
 .headerlogo img {
     margin-right: 50px;
+    padding: 5px;
 }
 
 
@@ -118,8 +124,42 @@ nav .bar {
     
 }
 
-.headernav #responsivenav {
+.headernav #fapopup {
     display: none;
+}
+
+.bar .responsive-nav-popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border: solid 4px #DE9F38;
+    box-shadow: 0px 0px 32px 25px black;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.64), 
+    rgba(0, 0, 0, 0.64)),  
+    linear-gradient(180deg, rgba(74, 117, 186, 0.98), rgba(74, 117, 186, 0.98));
+    color: white;
+    position: fixed;
+    z-index: 100;
+    height: 97%;
+    width: 95%;
+    margin: 0 auto;
+    left: 1%;
+    top: 1%;
+
+}
+
+.bar .responsive-nav-popup a {
+    font-size: 30px;
+    padding: 5%;
+    color: white;
+    text-decoration: none;
+}
+
+.bar .responsive-nav-popup img {
+    width: 64px;
+    height: 64px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -132,9 +172,10 @@ nav .bar {
 
     .headerlogo img {
         height: 60px;
+        margin: 5px;
     }
 
-    .headernav #responsivenav {
+    .headernav #fapopup {
         display: block;
     }
 }
@@ -186,25 +227,6 @@ button:hover {
     padding-bottom: 100px;
 }
 
-@media only screen and (max-width: 800px) {
-    .howdoesitwork {
-        display: grid;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        grid-template: repeat(3, auto) / 1fr;
-        grid-template-areas: 
-            "deliveryzone"
-            "addbrews"
-            "relax-and-deliver";
-        width: 100%;
-        margin: auto;
-        height: auto;
-        padding-top: 40px;
-        padding-bottom: 100px;
-        }
-}
 
 #deliveryzone {
     grid-area: deliveryzone
@@ -250,19 +272,22 @@ button:hover {
 }
 
 @media only screen and (max-width: 800px) {
+    .howdoesitwork {
+        grid-template: repeat(3, auto) / 1fr;
+        grid-template-areas: 
+            "deliveryzone"
+            "addbrews"
+            "relax-and-deliver";
+        width: 80%;
+
+    }
+
     .instructionbox {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        height: auto;
         text-align: center;
     }
     
-    .instructionimage{
-        display: flex;
-        flex-basis: 20%;
-    }
     .instructiontext {
         display: flex;
         flex-direction: column;
@@ -315,6 +340,13 @@ button:hover {
     padding-bottom: 20px;
 }
 
+@media only screen and (max-width: 800px) {
+    .zipcodefinder {
+        width: 80%;
+    }
+}
+
+
 .popup {
     display: none;
     justify-content: center;
@@ -335,7 +367,6 @@ button:hover {
     margin-top: -200px;
     width: 600px;
     margin-left: -300px;
-
     
 }
 
@@ -356,15 +387,40 @@ button:hover {
     opacity: 1;
 }
 
+@media only screen and (max-width: 800px) {
+    .popup {
+        width: 300px;
+        margin-left: -150px;
+    
+}
 
-.popup .exitbutton {
+.popup .logo-row {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+}
+
+.popup img {
+    height: 32px;
+    width: 32px;
+    opacity: 0.3;
+    padding: 0 1rem;
+}
+
+.popup img:hover {
+    opacity: 1;
+}
+}
+
+
+.exitbutton {
     all: unset;
     color: #DE9F38;
     font-size: 60px;
     position:absolute; top:-20px; right:5px;
 }
 
-.popup .exitbutton:hover {
+.exitbutton:hover {
     all: unset;
     font-size: 60px;
     position:absolute; top:-20px; right:5px;
@@ -411,12 +467,14 @@ button:hover {
     width: 40%;
 }
 
-/* Section 3 */
+/* Section 3 - Instagram posts*/
 .section3 {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     text-align: center;
+    border: 1px solid red;
+    margin: 5px;
     
 }
 
@@ -445,7 +503,6 @@ button:hover {
 }
 
 
-  /* Slideshow end */ 
 
 /* KEEP BECAUSE I DID GOOD
 .tastiestway {
@@ -472,8 +529,15 @@ button:hover {
 
 */
 
-/* Section 4 */
+/* Section 4 - Brewery Slideshow*/
 .section4 {
+    height: 500px;
+    border: 1px solid green;
+    margin: 5px;
+}
+
+/* Section 5 */
+.section5 {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -538,61 +602,13 @@ button:hover {
 
 
 
-
-
-/* Section 5 */
-.section5 {
-    display: flex;
-    height: 295px;
-    margin-top: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    background-image: linear-gradient(90deg, #ff935c, #fd7063 100%, #fb406c);
-    align-items: center;
-    justify-content: center;
-}
-
-.pinkboxcontainer {
-    display: grid;
-    grid-template: repeat(1, auto) / 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-        "independentcommunity breweries states beers";
-        
-}
-
-.pinkbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
+/* Miscellanous classes*/
 
 .instagram-media {
     height: 350px;
     width: 100px !important;
 }
 
-.pinkbox img {
-    height: 64px;
-    width: 64px;
-}
-
-#independentcommunity {
-    grid-area: independentcommunity;
-}
-
-#breweries {
-    grid-area: breweries;
-}
-
-#states {
-    grid-area: states;
-}
-
-#beers {
-    grid-area: beers;
-}
 
 
 
@@ -663,4 +679,22 @@ footer #logo-row img {
 
 footer #logo-row img:hover {
     opacity: 1;
+}
+
+/* Temporary fix to fix overflow */
+@media only screen and (max-width: 800px) {
+    footer {    
+        background-color: #1E3251;  
+        color: #DE9F38;
+    
+        display: grid;
+        grid-template: repeat(4, auto) / repeat(2, auto);
+        grid-template-areas: 
+            "logo info"
+            "mail socials";
+    
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
 }
