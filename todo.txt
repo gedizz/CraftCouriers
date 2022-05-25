@@ -6,6 +6,11 @@ GFX:
  - Change minnesota logo to not have county outlines
  - use craft couriers bronze or marigold for pin
  - maybe orange for c in car logo
+ - move nav logo C next to home and change color for both to white
+
+ NAV--
+  - change href to go to proper location and change textContent to proper names
+  - drop down for About Us > Our Passion > Delivery Zone > FAQ > Contact Us
 
  ARe you in the zone --
   - #zip-inside-range needs more content
