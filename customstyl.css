@@ -118,6 +118,27 @@ nav .bar {
     
 }
 
+.headernav #responsivenav {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .headerlogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: img;
+    }
+
+    .headerlogo img {
+        height: 60px;
+    }
+
+    .headernav #responsivenav {
+        display: block;
+    }
+}
+
 
 /* Section 1 */
 .section1 {
@@ -245,8 +266,9 @@ button:hover {
     .instructiontext {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         flex-basis: 80%;
-        align-items: flex-start;
     }
     
     .instructiontext h5 {
@@ -492,6 +514,29 @@ button:hover {
     grid-area: brobb335
 }
 
+@media only screen and (max-width: 800px) {
+    .referrals {
+        display: grid;
+        grid-template: repeat(3, auto) / 1fr;
+        grid-template-areas: 
+            "adiodc"
+            "sg003"
+            "brobb335";
+        width: 90%;
+        line-height: 1.8;
+    }
+    
+    .refbox {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    
+    }
+}
+
 
 
 
@@ -527,9 +572,9 @@ button:hover {
     color: white;
 }
 
-.istagram-media {
-    height: 300px;
-    width: 200px !important;
+.instagram-media {
+    height: 350px;
+    width: 100px !important;
 }
 
 .pinkbox img {
