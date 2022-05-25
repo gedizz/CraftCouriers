@@ -608,80 +608,63 @@ footer {
     color: #DE9F38;
 
     display: grid;
-    grid-template: repeat(4, auto) / 1fr;
+    grid-template: repeat(4, auto) / repeat(2, auto);
     grid-template-areas: 
-        "info"
-        "contact";
+        "logo info"
+        "mail socials";
+
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 7rem .5rem 7rem;
 }
 
-footer .infobar {
+footer #footlogo {
+    grid-area: logo;
+    display: flex;
+    justify-self: flex-start;
+}
+
+footer #infotext {
     grid-area: info;
     display: flex;
-    flex-basis: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer .footlogo {
-    display: flex;
-    flex-basis: 50%;
-    justify-content: flex-start;
-}
-
-footer .infotext {
-    display: flex;
-    /* have to set height so h3s are spaced */
-    height: 80%;
-    flex-basis: 50%;
     flex-direction: column;
-    align-items: flex-end;
+    height: 70%;
     justify-content: space-around;
 }
 
-footer .footlogo img {
-    max-width: 400px;
-}
-
-footer p {
+footer #email {
+    grid-area: mail;
     display: flex;
-    flex-basis: 100%;
-    justify-self: center;
-    padding-left: 3.5rem;
-}
-
-footer .contact_info {
-    grid-area: contact;
-    display: flex;
-    flex-basis: 100%;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-footer .contact_info #email {
+footer #email a {
+    color: #DE9F38; 
+}
+
+footer #infotext h3 {
+    text-align: center;
+}
+
+footer #logo-row {
+    grid-area: socials;
     display: flex;
-    flex-basis: 50%;
-    justify-content: flex-start;
-}
-
-footer p a {
-    color: #DE9F38;
-    margin: 0; 
-}
-
-footer .logo-row {
-    display: flex;
-    flex-basis: 50%;
-    justify-content: flex-end;
-    justify-self: center;
-}
-
-footer .logo-row img {
-    height: 32px;
-    width: 32px;
-    opacity: 0.3;
+    justify-content: space-around;
     padding: 0 2rem;
 }
 
-footer img:hover {
+footer #footlogo img {
+    max-width: 400px;
+    width: 100%;
+}
+
+footer #logo-row img {
+    height: 32px;
+    width: 32px;
+    opacity: 0.3;
+}
+
+footer #logo-row img:hover {
     opacity: 1;
 }
