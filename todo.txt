@@ -36,6 +36,7 @@ GFX:
     - Should display recent instagram posts from instagram.com/craftcouriers
     - Clicking on the post should bring you to page.
     - also add a follow us button
+    - use api to get 4 most recent photo and link
 
     Brewery Gallery --
      - Should be similar to gallery at https://www.craft-couriers.com/brewery-partners/

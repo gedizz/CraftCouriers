@@ -650,6 +650,25 @@ button:hover {
 
 .section4 .gallery-images img {
     border: 3px solid #DE9F38;
+    opacity: 0.6;
+}
+
+.section4 .image-container .gallery-header {
+    position: absolute;
+    top: 30%;
+    right: 50%;
+}
+
+.section4 .image-container .gallery-text {
+    position: absolute;
+    top: 35%;
+    right: 50%;
+}
+
+.section4 .image-container .gallery-button {
+    position: absolute;
+    top: 45%;
+    right: 50%;
 }
 
 .section4 .gallery-dot {
@@ -664,6 +683,13 @@ button:hover {
     padding: 5px;
     opacity: 0.5;
 }
+
+.section4 .image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
 
 /* Section 5 */
 .section5 {
