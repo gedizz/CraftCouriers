@@ -781,10 +781,11 @@ footer {
         "mail socials";
 
     row-gap: 1rem;
+    column-gap: 3rem;
 
     align-items: center;
     justify-content: space-between;
-    padding: .75rem 7rem;
+    padding: 1.25rem 7rem;
 }
 
 footer #footlogo {
@@ -841,6 +842,12 @@ footer #logo-row img:hover {
 }
 
 /* Temporary fix to fix overflow */
+@media only screen and (max-width: 1180px) {
+    footer {
+        padding: .75rem 2rem;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     footer {
         padding: 0;
