@@ -94,8 +94,8 @@
     </div>
 
     <div class="headtext">
-        <h1>CRAFT COURIERS partners with local breweries to deliver taproom
-            exclusive products right to your doorstep
+        <h1>Sharing the unique variety of quality local craft beer to 
+            fellow minnesotans — one delivery at a time
         </h1>
     </div>
 
@@ -291,11 +291,48 @@
 
         -->
     
+        <!-- Gallery 
 
+        1. First image is on page by default and text swoops in when scrolled to
+        2. Arrow will go to next or previous image
+            a. Text slides down
+            b. current image moves in direction of arrow
+            c. next image comes in from opposite side of arrow
+            d. text slides up
+        3. change opacity of dot on bottom to reflect current image in gallery
+        
+        -->
     <div class="section4">
-        <p>Here is the gallery</p>
-    </div>
 
+        <div class="gallery-container">
+            <div class="arrow">
+                <i class="fa fa-arrow-left" id="left-arrow" aria-hidden="true"></i>
+            </div>
+
+            <div class="gallery-images" id="gallery-images-container">
+                <img src="images/gallery/gallery-1.png" alt="gallery-1.png" id="gallery1">
+                <img src="images/gallery/gallery-2.png" alt="gallery-2.png" id="gallery2">
+                <img src="images/gallery/gallery-3.png" alt="gallery-3.png" id="gallery3">
+                <img src="images/gallery/gallery-4.png" alt="gallery-4.png" id="gallery4">
+                <img src="images/gallery/gallery-5.png" alt="gallery-5.png" id="gallery5">
+                <img src="images/gallery/gallery-6.png" alt="gallery-6.png" id="gallery6">
+                <img src="images/gallery/gallery-7.png" alt="gallery-7.png" id="gallery7">
+                <img src="images/gallery/gallery-8.png" alt="gallery-8.png" id="gallery8">
+                <img src="images/gallery/gallery-9.png" alt="gallery-9.png" id="gallery9">
+                <img src="images/gallery/gallery-10.png" alt="gallery-10.png" id="gallery10">
+            </div>
+
+            <div class="arrow">
+                <i class="fa fa-arrow-right" id="right-arrow" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="gallery-dots" id="dots">
+            <!-- Dots inserted here by JS-->
+        </div>
+
+    </div>
+    <script src="js/gallery.js"></script>
 
 
     <div class=section5>
