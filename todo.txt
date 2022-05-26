@@ -3,10 +3,10 @@ https://lucid.app/lucidchart/4acb70e7-220f-4f19-b785-c7a40d8c38e2/edit?viewport_
 
 
 GFX:
- - Change minnesota logo to not have county outlines
+ x Change minnesota logo to not have county outlines
  - use craft couriers bronze or marigold for pin
  - maybe orange for c in car logo
- - move nav logo C next to home and change color for both to white
+ x move nav logo C next to home and change color for both to white
  - fix header image pixelation
 
 
@@ -18,11 +18,11 @@ GFX:
   - maybe try a solid bg and adjust image down
 
   HOW DOES IT WORK
-   - padding 
+   - padding(mobile)
    - make the car drive
 
  ARe you in the zone --
-  - #zip-inside-range needs more content
+  - add zip code should send form submission to database maybe?
   -- future feature: If in x prox of brewery, maybe let them order still
   - add form validation
   - smaller text on #zip-outside-range
