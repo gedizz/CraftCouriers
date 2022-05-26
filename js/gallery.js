@@ -9,6 +9,15 @@ var currentlyDisplayedImage = 0;
 leftArrow.addEventListener("click", moveLeft);
 rightArrow.addEventListener("click", moveRight);
 
+
+
+// Animations ---------------------------------
+// transform: translate(0px, 50%); - moves l-r and then u-d
+
+
+
+
+
 // Hides images on load that are not supposed to be displayed
 for (var i = 0; i < galleryImages.length; i++) {
     image = galleryImages[i]
@@ -67,7 +76,6 @@ function moveLeft() {
                 currentlyDisplayedImage -= 1
                 
             }
-
             updateDotOpacity()
             nextImage.style.display = "block";
             break;
@@ -90,7 +98,7 @@ function moveRight() {
             } else {
                 currentlyDisplayedImage += 1
             }
-            updateDotOpacity()
+            updateDotOpacity();
             nextImage.style.display = "block";
             break;
             
