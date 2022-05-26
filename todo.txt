@@ -39,10 +39,8 @@ GFX:
     - use api to get 4 most recent photo and link
 
     Brewery Gallery --
-     - Should be similar to gallery at https://www.craft-couriers.com/brewery-partners/
-     - gallery text needs to be added
-     - when images are moved text should drop down and both images should 
-     slide in direction of arrow. then new text should slide up
+     x Should be similar to gallery at https://www.craft-couriers.com/brewery-partners/
+     x gallery text needs to be added
 
 
     Reviews --
