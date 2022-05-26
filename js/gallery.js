@@ -11,8 +11,44 @@ rightArrow.addEventListener("click", moveRight);
 
 
 
-// Animations ---------------------------------
-// transform: translate(0px, 50%); - moves l-r and then u-d
+// Animation functions
+function fadeIn(el, time) {
+    el.style.opacity = 0;
+    el.style.display = "block";
+
+    var last = +new Date();
+    var tick = function () {
+        el.style.opacity = +el.style.opacity + (new Date() - last) / time;
+        last = +new Date();
+
+        if (+el.style.opacity < 1) {
+            (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
+        }
+    };
+
+    tick();
+}
+
+
+
+function fadeOut(el, time) {
+    el.style.opacity = 0;
+    el.style.display = "block";
+
+    var last = +new Date();
+    var tick = function () {
+        el.style.opacity = +el.style.opacity + (new Date() - last) / time;
+        last = +new Date();
+
+        if (+el.style.opacity > 1) {
+            (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
+        }
+    };
+
+    tick();
+}
+
+// Animation functions end
 
 
 
@@ -42,7 +78,7 @@ for (var i = 0; i < galleryImages.length; i++) {
     } else {
         newElement.style.opacity = "0.5";
     }
-    
+
     galleryDots.appendChild(newElement);
 }
 
@@ -66,6 +102,7 @@ function moveLeft() {
     for (var i = 0; i < galleryImages.length; i++) {
         image = galleryImages[i]
         if (i == currentlyDisplayedImage) {
+            fadeOut(image, 1000);
             image.style.display = "none";
             nextImage = galleryImages[i - 1]
             // if image is first then reset currentlyDisplayedImage to lastelement in array here
@@ -74,12 +111,13 @@ function moveLeft() {
                 currentlyDisplayedImage = galleryImages.length - 1
             } else {
                 currentlyDisplayedImage -= 1
-                
+
             }
+            fadeIn(nextImage, 1500);
             updateDotOpacity()
             nextImage.style.display = "block";
             break;
-            
+
         }
     }
 }
@@ -89,6 +127,7 @@ function moveRight() {
     for (var i = 0; i < galleryImages.length; i++) {
         image = galleryImages[i]
         if (i == currentlyDisplayedImage) {
+            fadeOut(image, 1000);
             image.style.display = "none";
             nextImage = galleryImages[i + 1]
             // if image is last then reset currentlyDisplayedImage to 0 here
@@ -98,10 +137,11 @@ function moveRight() {
             } else {
                 currentlyDisplayedImage += 1
             }
+            fadeIn(nextImage, 1500);
             updateDotOpacity();
             nextImage.style.display = "block";
             break;
-            
+
         }
     }
 }
