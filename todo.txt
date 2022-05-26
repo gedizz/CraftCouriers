@@ -39,7 +39,9 @@ GFX:
 
     Brewery Gallery --
      - Should be similar to gallery at https://www.craft-couriers.com/brewery-partners/
-     - Clicking image should take you to the breweries corresponding page
+     - gallery text needs to be added
+     - when images are moved text should drop down and both images should 
+     slide in direction of arrow. then new text should slide up
 
 
     Reviews --

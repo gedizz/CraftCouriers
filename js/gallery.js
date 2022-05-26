@@ -4,7 +4,6 @@ var rightArrow = document.getElementById("right-arrow");
 var galleryImages = galleryContainer.children;
 var galleryDots = document.getElementById("dots");
 
-
 var currentlyDisplayedImage = 0;
 
 leftArrow.addEventListener("click", moveLeft);
@@ -16,6 +15,26 @@ for (var i = 0; i < galleryImages.length; i++) {
     if (i != currentlyDisplayedImage) {
         image.style.display = "none";
     }
+}
+
+// Adds the appropriate amount of dots beneath the gallery on page load
+for (var i = 0; i < galleryImages.length; i++) {
+    // add child to galleryDots with the id of i
+    // <i class="fa fa-circle" aria-hidden="true"></i>
+    var newElement = document.createElement("i");
+    newElement.setAttribute("class", "fa fa-circle");
+    newElement.setAttribute("aria-hidden", "true");
+    newElement.setAttribute("id", "dot" + i);
+    newElement.style.padding = "3px"
+
+    // On page load set the first dot opacity to 1 - all others are 0.5
+    if (i == currentlyDisplayedImage) {
+        newElement.style.opacity = "1";
+    } else {
+        newElement.style.opacity = "0.5";
+    }
+    
+    galleryDots.appendChild(newElement);
 }
 
 // Updates opacity of dot based on current image
@@ -30,26 +49,6 @@ function updateDotOpacity() {
         }
     }
 
-    // set all other dots opacity to 0.5
-}
-
-// Adds the appropriate amount of dots beneath the gallery on page load
-for (var i = 0; i < galleryImages.length; i++) {
-    // add child to galleryDots with the id of i
-    // <i class="fa fa-circle" aria-hidden="true"></i>
-    var newElement = document.createElement("i");
-    newElement.setAttribute("class", "fa fa-circle");
-    newElement.setAttribute("aria-hidden", "true");
-    newElement.setAttribute("id", "dot" + i);
-    newElement.style.padding = "3px"
-    // On page load set the first dot opacity to 1 - all others are 0.5
-    if (i == currentlyDisplayedImage) {
-        newElement.style.opacity = "1";
-    } else {
-        newElement.style.opacity = "0.5";
-    }
-    
-    galleryDots.appendChild(newElement);
 }
 
 
@@ -98,9 +97,3 @@ function moveRight() {
         }
     }
 }
-
-
-
-
-
-console.log(galleryImages);
