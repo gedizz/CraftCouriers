@@ -817,12 +817,39 @@ footer #logo-row img:hover {
 /* Temporary fix to fix overflow */
 @media only screen and (max-width: 800px) {
     footer {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding: 0;
+        display: grid;
+        grid-template: repeat(3, auto) / 30% 1fr;
+        grid-template-areas: 
+            "logo txt"
+            "logo email"
+            "logo socials";
+        
+        column-gap: 1.5rem;
+
+        padding: 0 1rem;
     }
 
-    footer #footlogo img {
-        max-width: 150px;
+    footer #footlogo {
+        grid-area: logo;
+    }
 
+    footer #infotext {
+        grid-area: txt;
+        padding-top: .5rem;
+    }
+
+    footer #infotext h3 {
+        font-size: .9rem;
+    }
+
+    footer #email {
+        grid-area: email;
+        padding-bottom: .5rem;
+    }
+
+    footer #logo-row {
+        grid-area: socials;
+        padding-bottom: .5rem;
     }
 }
