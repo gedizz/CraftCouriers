@@ -12,30 +12,30 @@ GFX:
 
 
  NAV--
-  - change href to go to proper location and change textContent to proper names
-  - drop down for About Us > Our Passion > Delivery Zone > FAQ > Contact Us
-  - add cart to menu
-  - maybe try a solid bg and adjust image down
+  - change href to go to proper location
+  x change textContent to proper names
+  x drop down for About Us > Our Passion > Delivery Zone > FAQ > Contact Us
+  x add cart to menu
+  x maybe try a solid bg and adjust image down
 
   HOW DOES IT WORK
    - padding(mobile)
    - make the car drive
 
  ARe you in the zone --
-  - add zip code should send form submission to database maybe?
   -- future feature: If in x prox of brewery, maybe let them order still
   - add form validation
-  - smaller text on #zip-outside-range
-  - raise opacity to socials on mobile
-  - form on mobile zooms in - force it to stay
+  x smaller text on #zip-outside-range
+  x raise opacity to socials on mobile
+  x form on mobile zooms in - force it to stay
 
   - FOR THE LOVE OF THE CRAFT
 
 
    Instagram posts
-    - Should display recent instagram posts from instagram.com/craftcouriers
+    x Should display recent instagram posts from instagram.com/craftcouriers
     - Clicking on the post should bring you to page.
-    - also add a follow us button
+    x also add a follow us button
     - use api to get 4 most recent photo and link
 
     Brewery Gallery --
@@ -49,4 +49,4 @@ GFX:
 
      Footer --
      - Needs to be responsive
-     - add href for socials
+     x add href for socials

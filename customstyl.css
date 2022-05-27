@@ -624,6 +624,39 @@ button:hover {
 
 }
 
+@media only screen and (max-width: 800px) {
+    .instagram-posts-container .row {
+        all: unset;
+        display: grid;
+        grid-template: repeat(1, auto) / 1fr 1fr;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "insta1 insta2"
+        "insta3 insta4";
+        width: 90%;
+    }
+
+    .instagram-posts-container .post {
+        padding: 5px;
+    }
+
+    #insta1 {
+        grid-area: insta1;
+    }
+
+    #insta2 {
+        grid-area: insta2;
+    }
+
+    #insta3 {
+        grid-area: insta3;
+    }
+
+    #insta4 {
+        grid-area: insta4;
+    }
+}
+
 
 
 /* KEEP BECAUSE I DID GOOD
