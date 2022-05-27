@@ -54,3 +54,4 @@ GFX:
      Footer --
      - Needs to be responsive
      x add href for socials
+     - take out #infotext section, unnecessary 
