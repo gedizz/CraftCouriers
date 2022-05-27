@@ -938,6 +938,7 @@ footer #email a {
 footer #infotext h3 {
     text-align: center;
     font-size: 1.25rem;
+    padding: .3em 0;
 }
 
 footer #logo-row {
@@ -1039,12 +1040,11 @@ footer #logo-row img:hover {
 }
 
 @media only screen and (max-width: 405px) {
-    footer #infotext h3,
-    footer #email {
+    footer #infotext h3 {
         font-size: .6rem;
     }
 
-    footer #infotext h3 {
-        padding: 10px;
+    footer #email {
+        font-size: .5rem;
     }
 }
