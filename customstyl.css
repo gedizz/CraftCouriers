@@ -38,7 +38,8 @@ nav {
     flex-direction: column;
     border: 1px solid black;
     height: 730px;
-    background-image: url("images/craft-courier-delivery.webP");
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url("images/craft-courier-delivery.webP");
     background-position: 0px 55px;
     background-size: cover;
 
@@ -120,6 +121,7 @@ nav .bar {
     align-items: center;
     justify-content: center;
     grid-area: img;
+
 }
 
 .headerlogo img {
@@ -1040,5 +1042,9 @@ footer #logo-row img:hover {
     footer #infotext h3,
     footer #email {
         font-size: .6rem;
+    }
+
+    footer #infotext h3 {
+        padding: 10px;
     }
 }

@@ -4,10 +4,12 @@ https://lucid.app/lucidchart/4acb70e7-220f-4f19-b785-c7a40d8c38e2/edit?viewport_
 
 GFX:
  x Change minnesota logo to not have county outlines
- - use craft couriers bronze or marigold for pin
+ x use craft couriers bronze or marigold for pin
  - maybe orange for c in car logo
  x move nav logo C next to home and change color for both to white
- - fix header image pixelation
+ x fix header image pixelation
+ - minnesota logo larger pin
+ - change all how it works logos to prussian blue
 
 
 
@@ -17,30 +19,32 @@ GFX:
   x drop down for About Us > Our Passion > Delivery Zone > FAQ > Contact Us
   x add cart to menu
   x maybe try a solid bg and adjust image down
+  - change mobile nav menu logo to jeramy specified
+  - add c left of home and/or cc logo -- send to jeramy
+  - try blue outline of text -- sharing unique
 
   HOW DOES IT WORK
-   - padding(mobile)
+   - bottle top padding low -- minnesota logo padding is to high
    - make the car drive
 
  ARe you in the zone --
   -- future feature: If in x prox of brewery, maybe let them order still
   - add form validation
-  x smaller text on #zip-outside-range
-  x raise opacity to socials on mobile
-  x form on mobile zooms in - force it to stay
+  - smaller text on #zip-outside-range
+
 
   - FOR THE LOVE OF THE CRAFT
+  - add width to text and center it on screen
+  - picture has space below for some reason
 
 
    Instagram posts
-    x Should display recent instagram posts from instagram.com/craftcouriers
     - Clicking on the post should bring you to page.
-    x also add a follow us button
-    - use api to get 4 most recent photo and link
+    ? use api to get 4 most recent photo and link
 
     Brewery Gallery --
      x Should be similar to gallery at https://www.craft-couriers.com/brewery-partners/
-     x gallery text needs to be added
+     - gallery text needs to be updated
 
 
     Reviews --
