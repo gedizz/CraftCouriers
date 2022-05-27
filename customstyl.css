@@ -1037,7 +1037,8 @@ footer #logo-row img:hover {
 }
 
 @media only screen and (max-width: 405px) {
-    footer #infotext h3 {
+    footer #infotext h3,
+    footer #email {
         font-size: .6rem;
     }
 }
