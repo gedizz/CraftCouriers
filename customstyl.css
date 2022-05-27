@@ -992,7 +992,7 @@ footer #logo-row img:hover {
     }
 
     footer #infotext h3 {
-        font-size: .9rem;
+        font-size: .8rem;
     }
 
     footer #email {
@@ -1003,5 +1003,41 @@ footer #logo-row img:hover {
     footer #logo-row {
         grid-area: socials;
         padding-bottom: .5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        grid-template: repeat(3, auto) / 50% 1fr;
+        grid-template-areas: 
+            "logo txt"
+            "logo txt"
+            "email socials"; 
+    }
+
+    footer #footlogo {
+        padding-top: 1em;
+    }
+
+    footer #infotext h3,
+    footer #email {
+        font-size: .65rem;
+    }
+
+    footer #logo-row {
+        padding: 0;
+        padding-bottom: 1em;
+        justify-content: space-between;
+    }
+
+    footer #logo-row a img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    footer #infotext h3 {
+        font-size: .6rem;
     }
 }
