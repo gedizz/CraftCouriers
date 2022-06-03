@@ -535,7 +535,7 @@ button:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 70%;
     height: auto;
     color: #ffffff;
 }
@@ -700,7 +700,7 @@ button:hover {
     align-items: center;
     height: 600px;
     width: 60%;
-    background-color: gray;
+    background-color: lightgray;
 }
 
 .section4 .gallery-container {
@@ -726,7 +726,7 @@ button:hover {
 
 .section4 .gallery-images img {
     border: 3px solid #DE9F38;
-    filter: brightness(75%);
+    filter: brightness(45%);
     
 }
 
@@ -808,6 +808,11 @@ button:hover {
     
     .section4 .image-container .gallery-button {
         top: 65%;
+    }
+
+    
+    .section4 .image-container .gallery-button {
+        top: 75%;
     }
 
 }
