@@ -297,7 +297,7 @@ button:hover {
     grid-template: repeat(1, auto) / 1fr 1fr 1fr;
     grid-template-areas:
         "deliveryzone addbrews relax-and-deliver";
-    width: 70%;
+    width: 60%;
     margin: auto;
     height: auto;
     padding-top: 40px;
@@ -323,11 +323,13 @@ button:hover {
     justify-content: center;
     align-items: flex-start;
     height: auto;
+    margin: 10px;
 }
 
 .instructionimage {
     display: flex;
     flex-basis: 20%;
+    padding-right: 10px;
 }
 
 .instructiontext {
@@ -524,7 +526,6 @@ button:hover {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.44),
             rgba(0, 0, 0, 0.44)),
         linear-gradient(180deg, rgba(74, 117, 186, 0.65), rgba(74, 117, 186, 0.92));
-    height: auto;
     margin-top: 40px;
     text-align: left;
     line-height: 1.9;
@@ -532,18 +533,21 @@ button:hover {
 
 .love-of-craft {
     display: flex;
-    flex-direction: row;
+    flex-direction: col;
     align-items: center;
     justify-content: center;
     width: 70%;
     height: auto;
     color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .love-of-craft img {
     height: 341px;
     width: 214px;
-    padding-right: 30px;
+    margin-right: 30px;
+    border: 3px solid #DE9F38;
 }
 
 .love-of-craft h3 {
@@ -568,8 +572,8 @@ button:hover {
     }
 
     .love-of-craft img {
-        padding-top: 20px;
-        padding-right: 0px;
+        margin-top: 20px;
+        margin-right: 0px;
     }
 }
 
@@ -658,33 +662,6 @@ button:hover {
         grid-area: insta4;
     }
 }
-
-
-
-/* KEEP BECAUSE I DID GOOD
-.tastiestway {
-    display: flex;
-    flex-direction: column;
-    height: 450px;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), 
-    rgba(0, 0, 0, 0.27)), 
-    url("https://uploads-ssl.webflow.com/5e18f76c778ad80e975f2197/5eb0868b17eff63667edefb4_phone3-compressor.png"), 
-    linear-gradient(180deg, rgba(30, 50, 81, 0.64), rgba(30, 50, 81, 0.82));
-    background-position: 0px 0px, 50% 50%, 0px 0px;
-    background-size: auto, cover, auto;
-    background-repeat: repeat, no-repeat, repeat;
-    background-attachment: scroll, fixed, scroll;
-    justify-content: center;
-    align-items: center;
-}
-
-.tastiestway h1 {
-    width: 35%;
-    text-transform: uppercase;
-    color: white;
-}
-
-*/
 
 /* Section 4 - Brewery Slideshow*/
 .section4 {
