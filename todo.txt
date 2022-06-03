@@ -21,7 +21,6 @@ GFX:
   x maybe try a solid bg and adjust image down
   - change mobile nav menu logo to jeramy specified
   - add c left of home and/or cc logo -- send to jeramy
-  - try blue outline of text -- sharing unique
 
   HOW DOES IT WORK
    - bottle top padding low -- minnesota logo padding is to high

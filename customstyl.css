@@ -1040,8 +1040,23 @@ footer #logo-row img:hover {
 }
 
 @media only screen and (max-width: 405px) {
-    footer #infotext h3 {
-        font-size: .6rem;
+    footer {
+        grid-template: repeat(2, auto) / 50% 1fr;
+        grid-template-areas: 
+            "logo socials"
+            "logo email"; 
+    }
+
+    footer #infotext {
+        display: none;
+    }
+
+    footer #logo-row {
+        margin-top: 40px;
+    }
+
+    footer #logo-row img {
+        opacity: 1;
     }
 
     footer #email {
