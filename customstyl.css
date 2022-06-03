@@ -226,9 +226,9 @@ nav .bar {
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
     nav {
-        background-position: 670px 100px;
+        background-position: 870px 100px;
     }
 
     .headerlogo {
@@ -254,6 +254,12 @@ nav .bar {
 
     .dropdown-content {
         top: unset;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    nav {
+        background-position: 670px 100px;
     }
 }
 
@@ -351,7 +357,8 @@ button:hover {
     font-size: 14px;
 }
 
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 1200px) {
     .howdoesitwork {
         grid-template: repeat(3, auto) / 1fr;
         grid-template-areas:
@@ -420,7 +427,13 @@ button:hover {
     padding-bottom: 20px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
+    .zipcodefinder {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 405px) {
     .zipcodefinder {
         width: 80%;
     }
@@ -467,7 +480,7 @@ button:hover {
     opacity: 1;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 405px) {
     .popup {
         width: 300px;
         margin-left: -150px;
@@ -558,7 +571,24 @@ button:hover {
     width: 40%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
+    .love-of-craft {
+        flex-direction: row;
+        width: 90%;
+        text-align: center;
+    }
+
+    .love-of-craft #owner-text {
+        width: 100%;
+
+    }
+
+    .love-of-craft img {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 405px) {
     .love-of-craft {
         flex-direction: column;
         width: 90%;
@@ -621,7 +651,7 @@ button:hover {
     width: 90%;
     height: 100%;
     object-fit: cover;
-    border: 1px solid black;
+    border: 3px solid #DE9F38;
 
 }
 
@@ -630,7 +660,21 @@ button:hover {
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
+    .instagram-posts-container .row {
+        all: unset;
+        display: grid;
+        grid-template: repeat(1, auto) / 1fr 1fr;
+        grid-gap: 25px;
+        grid-template-areas: 
+        "insta1 insta2"
+        "insta3 insta4";
+        width: 70%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 405px) {
     .instagram-posts-container .row {
         all: unset;
         display: grid;
@@ -760,7 +804,41 @@ button:hover {
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
+    .section4 .section4-container {
+        height: 600px;
+        width: 100%;
+    }
+        
+    .section4 .gallery-images img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        
+    }
+    
+    .section4 .image-container .gallery-header {
+        font-size: 10px;
+        top: 30%;
+    }
+    
+    .section4 .image-container .gallery-text {
+        font-size: 12px;
+        top: 50%;
+    }
+    
+    .section4 .image-container .gallery-button {
+        top: 65%;
+    }
+
+    
+    .section4 .image-container .gallery-button {
+        top: 75%;
+    }
+}
+
+
+@media only screen and (max-width: 405px) {
     .section4 .section4-container {
         height: 600px;
         width: 100%;
@@ -858,19 +936,11 @@ button:hover {
 }
 
 
-
-
-/* Miscellanous classes*/
-
-.instagram-media {
-    height: 350px;
-    width: 100px !important;
+@media only screen and (max-width: 1200px) {
+    .referrals {
+        width: 90%
+    }
 }
-
-
-
-
-
 
 /* Footer */
 footer {

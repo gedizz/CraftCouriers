@@ -1,10 +1,12 @@
 
+var body = document.querySelector("body");
 var zipCodeButton = document.getElementById("zipbutton");
 var insideRangeDiv = document.getElementById("zip-inside-range");
 var outsideRangeDiv = document.getElementById("zip-outside-range")
 var zipExitButton1 = document.getElementById("zip-exit1");
 var zipExitButton2 = document.getElementById("zip-exit2");
 var zipCodeForm = document.getElementById("zipcode");
+
 
 
 

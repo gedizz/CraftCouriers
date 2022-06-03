@@ -61,7 +61,7 @@ function navExit() {
 
 // when the responsive <a> fa fa-bar is clicked it will open the mobile nav menu
 function navClicked() {
-    if (screenWidth < 800) {
+    if (screenWidth < 1200) {
         navPopup.style.display = "flex";
         disableScroll()
     }
@@ -70,7 +70,7 @@ function navClicked() {
 // Select all normalnav named elements
 for (var i = 0; i < elements.length; i++) {
     el = elements[i]
-    if (screenWidth < 800) {
+    if (screenWidth < 1200) {
         el.style.display = "none";
     } else {
         el.style.display = "flex";
