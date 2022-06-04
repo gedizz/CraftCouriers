@@ -10,6 +10,7 @@ GFX:
  x fix header image pixelation
  x minnesota logo larger pin
  x change all how it works logos to prussian blue
+ - try to make borders of svgs the same width
 
 
 
@@ -23,6 +24,13 @@ GFX:
   - add c left of home and/or cc logo -- send to jeramy
   - change hiding nav elements to css instead of JS so its more responsive
 
+  ZIP CODE FINDER--
+  - request zip code button redirects to contact us
+  - order now button on success should go to order now page
+
   HOW DOES IT WORK
    - bottle top padding low -- minnesota logo padding is to high
    - make the car drive
+
+   INSTAGRAM --
+   - button should lead to instagram

@@ -132,6 +132,7 @@ nav .bar {
 .headerlogo #clogo {
     height: 60px;
     background-color: inherit;
+    margin-right: 10px;
 }
 
 
@@ -148,9 +149,11 @@ nav .bar {
     color: white;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     padding: 14px;
     font-size: 18px;
     text-shadow: -2px 2px black;
+
 
 }
 
@@ -182,6 +185,9 @@ nav .bar {
     flex-basis: 75%;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.8;
 
 
 }
@@ -227,6 +233,7 @@ nav .bar {
     padding: 5%;
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .bar .responsive-nav-popup img {
@@ -588,6 +595,7 @@ button:hover {
     width: 214px;
     margin-right: 30px;
     border: 3px solid #DE9F38;
+    image-rendering: smooth;
 }
 
 .love-of-craft h3 {
@@ -685,6 +693,10 @@ button:hover {
 .instagram-posts-container .post img:hover {
     filter: brightness(70%)
 
+}
+
+#follow-button {
+    margin-top: 30px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -925,6 +937,11 @@ button:hover {
     text-align: left;
     padding: 15px;
 
+}
+
+.refbox img {
+    height: 37px;
+    width: 132px; 
 }
 
 #adiodc {
