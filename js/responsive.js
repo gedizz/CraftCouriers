@@ -68,12 +68,12 @@ function navClicked() {
 }
 
 // Select all normalnav named elements
-for (var i = 0; i < elements.length; i++) {
-    el = elements[i]
-    if (screenWidth < 1200) {
-        el.style.display = "none";
-    } else {
-        el.style.display = "flex";
-    }
+// for (var i = 0; i < elements.length; i++) {
+//     el = elements[i]
+//     if (screenWidth < 1200) {
+//         el.style.display = "none";
+//     } else {
+//         el.style.display = "flex";
+//     }
 
-}
+// }
