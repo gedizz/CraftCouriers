@@ -11,26 +11,26 @@ GFX:
  x minnesota logo larger pin
  x change all how it works logos to prussian blue
  - try to make borders of svgs the same width
+ - crop mobile nav logo
 
 
 
  NAV--
-  - change href to go to proper location
   x change textContent to proper names
   x drop down for About Us > Our Passion > Delivery Zone > FAQ > Contact Us
   x add cart to menu
   x maybe try a solid bg and adjust image down
-  - change mobile nav menu logo to jeramy specified
-  - add c left of home and/or cc logo -- send to jeramy
-  - change hiding nav elements to css instead of JS so its more responsive
+  x add c left of home and/or cc logo -- send to jeramy
+  x change hiding nav elements to css instead of JS so its more responsive
+  - change href to go to proper location
+  x change mobile nav menu logo to jeramy specified
 
   ZIP CODE FINDER--
   - request zip code button redirects to contact us
   - order now button on success should go to order now page
 
   HOW DOES IT WORK
-   - bottle top padding low -- minnesota logo padding is to high
-   - make the car drive
+   x bottle top padding low -- minnesota logo padding is to high
 
    INSTAGRAM --
-   - button should lead to instagram
+   x button should lead to instagram
