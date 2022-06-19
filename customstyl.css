@@ -39,7 +39,7 @@ nav {
     border: 1px solid black;
     height: 730px;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url("images/craft-courier-delivery.webP");
+    url("images/craft-courier-delivery.jpg");
     background-position: 0px 55px;
     background-size: cover;
 
@@ -269,6 +269,10 @@ nav .bar {
         display: block;
     }
 
+    .headtext {
+        margin-top: 0;
+    }
+
     .normalnav {
         display: none;
     }
@@ -284,13 +288,14 @@ nav .bar {
 
 @media only screen and (max-width: 405px) {
     nav {
-        background-position: 670px 100px;
+        background-position: 520px 100px;
+        height: 60vh;
     }
 
     .headtext h1 {
         color: white;
         text-shadow: -2px 2px black;
-        font-size: 30px;
+        font-size: 1.25em;
         line-height: 1.5;
         text-align: center;
         width: 90%;
@@ -683,11 +688,17 @@ button:hover {
     height: auto;
 }
 
+.instagram-posts-container .post a {
+    width: 90%;
+    height: 100%;
+}
+
 .instagram-posts-container .post img {
     width: 90%;
     height: 100%;
     object-fit: cover;
     border: 3px solid #DE9F38;
+    cursor: pointer;
 
 }
 
@@ -818,6 +829,12 @@ button:hover {
     border: 2px solid white;
     width: 150px;
     height: 40px;
+    color: white;
+}
+
+.section4 .image-container .gallery-button a {
+    text-decoration: none;
+    color: white;
 }
 
 .section4 .image-container .gallery-button button:hover {
