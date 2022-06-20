@@ -9,7 +9,10 @@ var zipCodeForm = document.getElementById("zipcode");
 
 
 
-
+/* To add new - enter 'zipcode' Comma and space must be placed after 
+   unless it's last entry 
+   in array
+*/
 const zipCodes = ['55126', '55305', '55488', '55487', '55455', '55112', '55311', '55343',
     '55345', '55369', '55401', '55402', '55403', '55404', '55405', '55406', '55407', '55408',
     '55409', '55410', '55411', '55412', '55413', '55414', '55415', '55416', '55417', '55418',
