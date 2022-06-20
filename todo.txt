@@ -11,7 +11,7 @@ GFX:
  x minnesota logo larger pin
  x change all how it works logos to prussian blue
  - try to make borders of svgs the same width
- - crop mobile nav logo
+ x crop mobile nav logo
 
 
 
@@ -22,12 +22,12 @@ GFX:
   x maybe try a solid bg and adjust image down
   x add c left of home and/or cc logo -- send to jeramy
   x change hiding nav elements to css instead of JS so its more responsive
-  - change href to go to proper location
+  x change href to go to proper location
   x change mobile nav menu logo to jeramy specified
 
   ZIP CODE FINDER--
-  - request zip code button redirects to contact us
-  - order now button on success should go to order now page
+  x request zip code button redirects to contact us
+  x order now button on success should go to order now page
 
   HOW DOES IT WORK
    x bottle top padding low -- minnesota logo padding is to high
