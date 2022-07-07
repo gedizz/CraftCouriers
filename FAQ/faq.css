@@ -1,3 +1,76 @@
 .content {
     height: 100vh;
 }
+
+.primary-container {
+    display: flex;
+    flex-direction: column;
+  
+    width: 50%;
+    width: max(300px, 70vw);  /* is this best practice? */
+    margin: 5em auto;
+  
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+  }
+  
+  .title {
+    font-size: 3em;
+  }
+  
+  
+  .accordian {
+    display: grid;
+    grid-template: repeat(2, auto) / 1fr;
+    grid-template-areas: 
+      "top"
+      "bottom";
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .top-bar,
+  .bottom-bar {
+    display: flex;
+    padding: 0 1em;
+  }
+  
+  .top-bar {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top-bar:hover {
+    cursor: pointer;
+  }
+  
+  .arrow i {
+    font-size: 1.7em;
+    transform: rotate(90deg);
+  
+    transition: all 400ms linear;
+  }
+  
+  
+  .rotate {
+    transform: rotate(0deg) !important;
+  }
+  
+  .arrow i:hover {
+    opacity: 1;
+  }
+  
+  .bottom-bar {
+    justify-content: flex-start;
+    max-height: 0;
+    overflow: hidden;
+  
+    transition: all 400ms linear;
+  }
+  
+  .show {
+    max-height: 30px; 
+  }
+  
+  

@@ -57,7 +57,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sora:wght@200&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/f35f84ce5c.js" crossorigin="anonymous"></script>
+    <script src="../js/accordian.js" defer></script>
 </head>
 
 
@@ -73,7 +74,7 @@
         </div>
 
         <div class="responsive-nav-popup" id="nav-popup">
-            <img src="images/responsive-nav-logo.webp" alt="nav-popup-logo.png">
+            <img src="../images/responsive-nav-logo.webp" alt="nav-popup-logo.png">
     
             <button class="exitbutton" id="nav-popup-exit">x</button>
             
@@ -129,7 +130,40 @@
 <body>
 
     <div class="content">
-        s
+        <div class="primary-container">
+
+            <h1 class="title">FAQ</h1>
+        
+            <div class="accordian">
+              <div class="top-bar">
+                <h1 class="question">A question...</h1>
+                <div class="arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+        
+              <div class="bottom-bar">
+                <div class="answer">
+                  <h2>A generic and often not very useful answer...</h2>
+                </div>
+              </div>
+            </div>
+        
+            <div class="accordian">
+              <div class="top-bar">
+                <h1 class="question">A common question...</h1>
+                <div class="arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+        
+              <div class="bottom-bar">
+                <div class="answer">
+                  <h2>A generic and often not very useful answer...</h2>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
 
 
