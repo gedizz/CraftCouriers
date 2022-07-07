@@ -45,8 +45,9 @@
     <!-- Javascript -->
 
 
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../admin/template.css" type="text/css">
+    <link rel="stylesheet" href="delivery-zone.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--fa fa-bars-->
@@ -72,7 +73,7 @@
         </div>
 
         <div class="responsive-nav-popup" id="nav-popup">
-            <img src="images/responsive-nav-logo.webp" alt="nav-popup-logo.png">
+            <img src="../images/responsive-nav-logo.webp" alt="nav-popup-logo.png">
     
             <button class="exitbutton" id="nav-popup-exit">x</button>
             
@@ -116,7 +117,7 @@
             <a id="fapopup"><i class="fa fa-bars"></i></a>
         </div>
 
-        <script src="js/responsive.js"></script>
+        <script src="../js/responsive.js"></script>
 
     </div>
 
@@ -128,10 +129,14 @@
     use this for map: -->
 <body>
 
-    <h1>Current Delivery Zone</h1>
-    <p>Our delivery zone is based on Zip Code and this map may not include all of them in their entirety. Use our Zip Code Finder tool before placing an order to see if you are in our zone.</p>
+    <div class="content">
+        <h1>Current Delivery Zone</h1>
+        <p>Our delivery zone is based on Zip Code and this map may not include all of them in their entirety.  Use our Zip Code Finder tool before placing an order to see if you are in our zone.</p>
 
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1L4YpnDrzwRu4a3hoKsqGrMovtFIuapXO&ehbc=2E312F" width="640" height="480"></iframe>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1L4YpnDrzwRu4a3hoKsqGrMovtFIuapXO&ehbc=2E312F"></iframe>
+    </div>
+
+    
 
 
 </body>
